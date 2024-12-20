@@ -1,0 +1,24 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "Syed Ishaaq",
+  "license": "ISC",
+  "description": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "dotenv": "^16.4.7",
+    "nodemon": "^3.1.9"
+  }
+}
