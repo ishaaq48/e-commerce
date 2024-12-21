@@ -1,6 +1,5 @@
 const products = [
    {
-    _id: '1',
     name: "Airpods Wireless Bluetooth Headphones",
     image: '/images/airpods.jpg',
     description: 'Bluetooth technology lets you connect it with compatible devices wirelessly. High-quality audio output.',
@@ -12,7 +11,6 @@ const products = [
     numReviews: 12
    },
    {
-    _id: '2',
     name: "Amazon Alexa Smart Speaker",
     image: '/images/alexa.jpg',
     description: 'Voice-controlled smart speaker with Alexa integration. Enjoy hands-free music, smart home control, and more.',
@@ -24,7 +22,6 @@ const products = [
     numReviews: 25
    },
    {
-    _id: '3',
     name: "Canon EOS 1500D DSLR Camera",
     image: '/images/camera.jpg',
     description: 'Capture stunning photos and videos with this easy-to-use DSLR camera featuring a 24.1 MP sensor.',
@@ -36,7 +33,6 @@ const products = [
     numReviews: 30
    },
    {
-    _id: '4',
     name: "Logitech Wireless Mouse",
     image: '/images/mouse.jpg',
     description: 'Ergonomic wireless mouse with precision tracking and long battery life. Perfect for work or gaming.',
@@ -48,7 +44,6 @@ const products = [
     numReviews: 40
    },
    {
-    _id: '5',
     name: "Samsung Galaxy S21 Smartphone",
     image: '/images/phone.jpg',
     description: 'Experience the next-level performance and camera quality with this flagship smartphone from Samsung.',
@@ -60,7 +55,6 @@ const products = [
     numReviews: 18
    },
    {
-    _id: '6',
     name: "Sony PlayStation 5 Console",
     image: '/images/playstation.jpg',
     description: 'The ultimate gaming console with lightning-fast load times and breathtaking graphics.',
