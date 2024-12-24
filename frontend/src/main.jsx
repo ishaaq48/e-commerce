@@ -11,6 +11,7 @@ import './assets/index.css'
 import App from './App.jsx'
 import HomeScreen from './Screen/HomeScreen.jsx'
 import ProductScreen from './Screen/ProductScreen.jsx'
+import CartScreen from './Screen/cartScreen.jsx'
 
 createRoot(document.getElementById('root')).render(
   <Provider store={store}>
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')).render(
           <Route path='/' element={<App />}>
             <Route index path='/' element={<HomeScreen />} />
             <Route path='/product/:id' element={<ProductScreen />} />
+            <Route path='/cart' element={<CartScreen />} />
           </Route>
       </Routes>
     </BrowserRouter>
