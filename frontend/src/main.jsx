@@ -17,6 +17,7 @@ import RegisterScreen from './Screen/RegisterScreen.jsx'
 import ShippingScreen from './Screen/ShippingScreen.jsx'
 import PrivateRoute from './components/PrivateRoute.jsx'
 import PaymentScreen from './Screen/PaymentScreen.jsx'
+import PlaceOrderScreen from './Screen/PlaceOrderScreen.jsx'
 
 createRoot(document.getElementById('root')).render(
   <Provider store={store}>
@@ -32,6 +33,7 @@ createRoot(document.getElementById('root')).render(
             <Route path='' element={<PrivateRoute />} >
                <Route path='/shipping' element={<ShippingScreen />} />
                <Route path='/payment' element={<PaymentScreen />} />
+               <Route path='/placeorder' element={<PlaceOrderScreen />} />
             </Route>
           </Route>
       </Routes>
