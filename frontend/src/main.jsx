@@ -12,6 +12,11 @@ import App from './App.jsx'
 import HomeScreen from './Screen/HomeScreen.jsx'
 import ProductScreen from './Screen/ProductScreen.jsx'
 import CartScreen from './Screen/cartScreen.jsx'
+import LoginScreen from './Screen/LoginScreen.jsx'
+import RegisterScreen from './Screen/RegisterScreen.jsx'
+import ShippingScreen from './Screen/ShippingScreen.jsx'
+import PrivateRoute from './components/PrivateRoute.jsx'
+import PaymentScreen from './Screen/PaymentScreen.jsx'
 
 createRoot(document.getElementById('root')).render(
   <Provider store={store}>
@@ -21,6 +26,13 @@ createRoot(document.getElementById('root')).render(
             <Route index path='/' element={<HomeScreen />} />
             <Route path='/product/:id' element={<ProductScreen />} />
             <Route path='/cart' element={<CartScreen />} />
+            <Route path='/auth' element={<LoginScreen />} />
+            <Route path='/register' element={<RegisterScreen />} />
+           
+            <Route path='' element={<PrivateRoute />} >
+               <Route path='/shipping' element={<ShippingScreen />} />
+               <Route path='/payment' element={<PaymentScreen />} />
+            </Route>
           </Route>
       </Routes>
     </BrowserRouter>
