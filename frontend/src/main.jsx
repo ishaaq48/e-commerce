@@ -17,10 +17,12 @@ import LoginScreen from './Screen/LoginScreen.jsx'
 import RegisterScreen from './Screen/RegisterScreen.jsx'
 import ShippingScreen from './Screen/ShippingScreen.jsx'
 import PrivateRoute from './components/PrivateRoute.jsx'
+import AdminRoute from './components/AdminRoute.jsx'
 import PaymentScreen from './Screen/PaymentScreen.jsx'
 import PlaceOrderScreen from './Screen/PlaceOrderScreen.jsx'
 import OrderScreen from './Screen/OrderScreen.jsx'
 import ProfileScreen from './Screen/ProfileScreen.jsx'
+import OrderListScreen from './Screen/admin/OrderListScreen.jsx'
 
 createRoot(document.getElementById('root')).render(
   <PayPalScriptProvider deferLoading={true}>
@@ -41,6 +43,12 @@ createRoot(document.getElementById('root')).render(
                <Route path='/order/:id' element={<OrderScreen />} />
                <Route path='/profile' element={<ProfileScreen />} />
             </Route>
+
+            <Route path='' element={<AdminRoute />} >
+               <Route path='/admin/orderlist' element={<OrderListScreen />} />
+               
+            </Route>
+
           </Route>
       </Routes>
     </BrowserRouter>
