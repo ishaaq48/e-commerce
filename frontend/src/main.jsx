@@ -24,6 +24,7 @@ import OrderScreen from './Screen/OrderScreen.jsx'
 import ProfileScreen from './Screen/ProfileScreen.jsx'
 import OrderListScreen from './Screen/admin/OrderListScreen.jsx'
 import ProductListScreen from './Screen/admin/ProductListScreen.jsx'
+import ProductEditScreen from './Screen/admin/ProductEditScreen.jsx'
 
 createRoot(document.getElementById('root')).render(
   <PayPalScriptProvider deferLoading={true}>
@@ -48,6 +49,7 @@ createRoot(document.getElementById('root')).render(
             <Route path='' element={<AdminRoute />} >
                <Route path='/admin/orderlist' element={<OrderListScreen />} />
                <Route path='/admin/productlist' element={<ProductListScreen />} />
+               <Route path='/admin/product/:id/edit' element={<ProductEditScreen />} />
             </Route>
 
           </Route>
